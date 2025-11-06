@@ -35,7 +35,8 @@ jobs:
       run: |
         git config --local user.mail "tmoralestrabajo@gmail.com"
         git config --local user.name "tomasmoralesmorin"
-        git fetch
+        git branch 
+        git branch -a
         git checkout main
         git merge dev
         
