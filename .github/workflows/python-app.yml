@@ -1,22 +1,13 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: Python application
+name: Merge Dev to Main After Tests
 
 on:
-  workflow_dispatch:
-    inputs:
-      branch_name: 
-        description: 'Branch name to swith to '
-        required: true
-        default: 'main'
-
-permissions:
-  contents: read
+  workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
-  build:
-
+  merge:
     runs-on: ubuntu-latest
 
     steps:
@@ -40,12 +31,10 @@ jobs:
       run: |
         pytest
 
-    - name: Swith to specified branch
+    - name: Merge dev into main 
       run: |
-        echo "Swithing to branch"
-        git checkout ${{ github.event.inputs.branch_name }}
-
-    - name: Confirm current branch
-      run: |
-        echo "Current branch:"
-        git branch --show-current
+        git config --local user.mail "tmoralestrabajo@gmail.com"
+        git config --local user.name "tomasmoralesmorin"
+        git checkout main
+        git merge dev
+        git push origin main
