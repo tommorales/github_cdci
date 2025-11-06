@@ -1,4 +1,8 @@
-# math_operations.py
+""" 
+ Different math_operations
+ 
+ Commit: dev brach 3
+"""
 
 def add(a, b):
     return a + b
