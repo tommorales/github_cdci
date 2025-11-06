@@ -4,7 +4,7 @@
 name: Python application
 
 on:
-  workflow_dispath:
+  workflow_dispatch:
     inputs:
       branch_name: 
         description: 'Branch name to swith to '
