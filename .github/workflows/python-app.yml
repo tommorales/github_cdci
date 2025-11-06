@@ -46,6 +46,6 @@ jobs:
         git checkout ${{ github.event.inputs.branch_name }}
 
     - name: Confirm current branch
-       run: |
-         echo "Current branch:"
-         git branch --show-current
+      run: |
+        echo "Current branch:"
+        git branch --show-current
