@@ -1,4 +1,6 @@
-# math_operations.py
+""" 
+ Different math_operations
+"""
 
 def add(a, b):
     return a + b
