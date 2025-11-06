@@ -1,6 +1,6 @@
 
 def main():
-	print("Hello ..")
+	print("Hello CD/CI ...")
 
 
 if __name__=="__main__":
