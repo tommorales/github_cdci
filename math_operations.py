@@ -1,7 +1,7 @@
 """ 
  Different math_operations
  
- Commit: hacemos push
+ Commit: hacemos push per commit
 """
 
 def add(a, b):
