@@ -20,10 +20,4 @@ jobs:
       - name: Push from dev
         run: echo "Per release"
       
-      - name: Test Local Action
-        uses: tommorales/github_cdci
-        with:
-          token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
-          branches: main
-          force: true
-   
+      
