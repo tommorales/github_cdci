@@ -25,5 +25,7 @@ jobs:
         run: echo Per commit eval PASS !
 
       - name: Run git commands
-        run: git branch 
+        run: |
+          git branch 
+          git chechout main
    
