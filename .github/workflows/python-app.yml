@@ -21,7 +21,7 @@ jobs:
         run: echo "Per release"
       
       - name: Test Local Action
-        uses: tommorales/merge-branches@v1
+        uses: tommorales/github_cdci@v1
         with:
           token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
           branches: main
