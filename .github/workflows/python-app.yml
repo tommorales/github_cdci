@@ -33,8 +33,6 @@ jobs:
 
     - name: Merge dev into main 
       run: |
-        git config --local user.mail "tmoralestrabajo@gmail.com"
-        git config --local user.name "tomasmoralesmorin"
         git branch 
         git branch -a
         git checkout main
