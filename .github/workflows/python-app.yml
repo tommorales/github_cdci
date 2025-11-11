@@ -17,8 +17,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Push from dev
+        run: echo "Per release"
+      
       - name: Test Local Action
-        uses: DerTimonius/merge-branches@v1
+        uses: tommorales/merge-branches@v1
         with:
           token: ${{ secrets.GITHUB_ACCESS_TOKEN }}
           branches: main
