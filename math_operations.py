@@ -1,7 +1,7 @@
 """ 
  Different math_operations
  
- Commit: git commands 6
+ Commit: git commands 7
 """
 
 def add(a, b):
