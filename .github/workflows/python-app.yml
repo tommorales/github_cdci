@@ -27,5 +27,5 @@ jobs:
       - name: Run git commands
         run: |
           git branch 
-          git chechout main
+          git checkout main
    
